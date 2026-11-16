@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dune 18 | Coastal Dining & Seafood in Ship Bottom, NJ</title>
+  <meta name="description" content="Dune 18 at 1916 Long Beach Blvd, Ship Bottom, NJ. Upscale-casual coastal dining, fresh seafood, BYOB & Bellview Winery selections.">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Connected External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header id="site-header">
+    <div class="container nav-bar">
+      <a href="#top" class="brand-logo">Dune <span>18</span></a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="bag-btn" id="open-bag-btn" aria-label="View pickup order bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="bag-badge" id="bag-count">0</span>
+        </button>
+
+        <button class="btn-pill btn-red header-cta-desktop open-reserve-modal">Reserve Table</button>
+
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <button class="close-x" id="close-mobile-drawer" aria-label="Close menu">×</button>
+    <a href="#top" class="mobile-nav-item">Home</a>
+    <a href="#menu" class="mobile-nav-item">Menu</a>
+    <a href="#about" class="mobile-nav-item">About Us</a>
+    <a href="#contact" class="mobile-nav-item">Contact</a>
+    <button class="btn-pill btn-red open-reserve-modal">Reserve a Table</button>
+  </div>
+
+  <!-- HERO SECTION -->
+  <main id="top">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        
+        <div class="hero-copy">
+          <h1>It’s not just Seafood, It’s an Experience.</h1>
+          <p class="hero-sub">
+            Upscale-casual coastal American dining in the heart of Ship Bottom, LBI. Locally sourced catches, handcrafted classics, and relaxed seaside hospitality.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#menu" class="btn-pill btn-red">View Menu</a>
+            <button class="btn-pill btn-white open-reserve-modal">Book A Table</button>
+          </div>
+
+          <div class="hero-reviews-widget">
+            <span class="hero-reviews-label">Guest Reviews (Ship Bottom, LBI)</span>
+            <div class="avatar-stack">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Guest reviewer">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Guest reviewer">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Guest reviewer">
+              <span class="avatar-count">4.8★</span>
+            </div>
+            <div class="star-row" aria-label="4.8 out of 5 stars">
+              ★★★★★ <span>5,200+ Resy & Google diners</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="floating-callout">
+            <div class="callout-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M8 22h8M12 15v7M12 15a5 5 0 005-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 005 5z"/>
+              </svg>
+            </div>
+            <div class="callout-title">BYOB & Wine</div>
+            <div class="callout-sub"><strong>Bring your own</strong> or enjoy local Bellview Winery bottles</div>
+          </div>
+
+          <svg class="leaf-accent leaf-1" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M10 52C14 26 34 10 54 12C52 34 36 52 10 52Z" fill="#3B7A3E"/>
+            <path d="M12 50C24 38 38 24 52 14" stroke="#255427" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg class="leaf-accent leaf-2" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M10 52C14 26 34 10 54 12C52 34 36 52 10 52Z" fill="#4B8F4E"/>
+          </svg>
+          <svg class="leaf-accent leaf-3" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M10 52C14 26 34 10 54 12C52 34 36 52 10 52Z" fill="#2F6B32"/>
+            <path d="M12 50C24 38 38 24 52 14" stroke="#1E4720" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+
+          <div class="hero-plate-frame">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=85" alt="Dune 18 Signature Coastal Seafood Plate">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SIGNATURE DISHES SHOWCASE -->
+    <section class="dishes-showcase" aria-label="Dune 18 Signature Dishes">
+      <div class="container">
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow arrow-prev" id="dish-prev" aria-label="Previous dishes">←</button>
+
+          <div class="dish-cards-track" id="signature-track">
+            <article class="plate-card">
+              <div class="plate-circle-wrap">
+                <img src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=500&q=80" alt="Thai Coconut Seared Scallops">
+                <button class="quick-add-btn add-to-bag" data-name="Thai Coconut Seared Scallops" data-price="38.00" aria-label="Add Thai Coconut Seared Scallops to pickup bag">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="plate-card-body">
+                <div>
+                  <h3 class="plate-card-title">Thai Coconut Scallops</h3>
+                  <p class="plate-card-sub">Jasmine rice, haricot verts, red curry coconut cream</p>
+                </div>
+                <div class="plate-card-price">$38.00</div>
+              </div>
+            </article>
+
+            <article class="plate-card">
+              <div class="plate-circle-wrap">
+                <img src="https://images.unsplash.com/photo-1501595091296-3aa970afb3ff?auto=format&fit=crop&w=500&q=80" alt="Seared Panko Crusted Bluefin Tuna">
+                <button class="quick-add-btn add-to-bag" data-name="Seared Panko Crusted Bluefin Tuna" data-price="35.00" aria-label="Add Bluefin Tuna to pickup bag">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="plate-card-body">
+                <div>
+                  <h3 class="plate-card-title">Panko Bluefin Tuna</h3>
+                  <p class="plate-card-sub">Grilled asparagus, jasmine rice, pineapple soy glaze</p>
+                </div>
+                <div class="plate-card-price">$35.00</div>
+              </div>
+            </article>
+
+            <article class="plate-card">
+              <div class="plate-circle-wrap">
+                <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=500&q=80" alt="Pan Seared Atlantic Halibut">
+                <button class="quick-add-btn add-to-bag" data-name="Atlantic Halibut" data-price="36.00" aria-label="Add Atlantic Halibut to pickup bag">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="plate-card-body">
+                <div>
+                  <h3 class="plate-card-title">Atlantic Halibut</h3>
+                  <p class="plate-card-sub">Pan seared over seafood risotto, lobster cream sauce</p>
+                </div>
+                <div class="plate-card-price">$36.00</div>
+              </div>
+            </article>
+
+            <article class="plate-card">
+              <div class="plate-circle-wrap">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Pork Belly Chops">
+                <button class="quick-add-btn add-to-bag" data-name="Pork Belly Chops" data-price="16.00" aria-label="Add Pork Belly Chops to pickup bag">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="plate-card-body">
+                <div>
+                  <h3 class="plate-card-title">Pork Belly Chops</h3>
+                  <p class="plate-card-sub">Glazed with house Asian barbeque sauce & scallions</p>
+                </div>
+                <div class="plate-card-price">$16.00</div>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-arrow arrow-next" id="dish-next" aria-label="Next dishes">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DUNE 18 FULL DINNER MENU WITH FOOD PHOTOS -->
+    <section id="menu" class="section-block">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Ship Bottom, LBI</span>
+          <h2>Dune 18 Dinner Menu</h2>
+          <p>Crafted daily with local Barnegat Bay seafood, prime cuts, and seasonal produce. Order pickup online or join us in our dining room.</p>
+        </div>
+
+        <div class="filter-pills" role="tablist" aria-label="Filter menu by category">
+          <button class="pill-tab active" data-cat="all">All Dishes</button>
+          <button class="pill-tab" data-cat="appetizers">Appetizers</button>
+          <button class="pill-tab" data-cat="salads">Salads</button>
+          <button class="pill-tab" data-cat="entrees">Entrees</button>
+          <button class="pill-tab" data-cat="sides">Sides & Prix Fixe</button>
+        </div>
+
+        <div class="menu-grid-2col" id="dune-menu-list">
+          <!-- Appetizer 1 -->
+          <div class="menu-row-card" data-category="appetizers">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=240&q=80" alt="Pork Belly Chops" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Appetizer</span>
+              <h3>Pork Belly Chops</h3>
+              <p>House Asian barbeque sauce, fresh scallions</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$16.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Pork Belly Chops" data-price="16.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Appetizer 2 -->
+          <div class="menu-row-card" data-category="appetizers">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=240&q=80" alt="Heirloom Tomato Burrata" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Appetizer</span>
+              <h3>Burrata</h3>
+              <p>Heirloom tomatoes, grilled peaches, lemon herb oil</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$15.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Burrata" data-price="15.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Appetizer 3 -->
+          <div class="menu-row-card" data-category="appetizers">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=240&q=80" alt="Baked Clams Casino" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Appetizer</span>
+              <h3>Baked Clams Casino</h3>
+              <p>Local Barnegat Bay clams, sweet peppers, applewood smoked bacon</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$17.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Baked Clams Casino" data-price="17.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Appetizer 4 -->
+          <div class="menu-row-card" data-category="appetizers">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=240&q=80" alt="Lobster Flatbread" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Appetizer</span>
+              <h3>Lobster Flatbread</h3>
+              <p>Sautéed onion, tomatoes, smoked gouda, crunchy garlic, arugula & tobiko</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$22.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Lobster Flatbread" data-price="22.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Salad 1 -->
+          <div class="menu-row-card" data-category="salads">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=240&q=80" alt="Golden Beet Mixed Salad" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Salad</span>
+              <h3>Golden Beet Mixed Salad</h3>
+              <p>Strawberry-infused white balsamic vinaigrette, candied walnuts, feta cheese</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$14.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Golden Beet Mixed Salad" data-price="14.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Salad 2 -->
+          <div class="menu-row-card" data-category="salads">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=240&q=80" alt="Dune 18 House Salad" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Salad</span>
+              <h3>Dune 18 House Salad</h3>
+              <p>Shaved red onions, grape tomatoes, Kalamata olives, homemade croutons, creamy Italian vinaigrette</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$12.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Dune 18 House Salad" data-price="12.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Entree 1 -->
+          <div class="menu-row-card" data-category="entrees">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?auto=format&fit=crop&w=240&q=80" alt="Thai Coconut Seared Scallops" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Signature Entree</span>
+              <h3>Thai Coconut Seared Scallops</h3>
+              <p>Jumbo sea scallops, jasmine rice, haricot verts, red curry coconut cream sauce</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$38.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Thai Coconut Seared Scallops" data-price="38.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Entree 2 -->
+          <div class="menu-row-card" data-category="entrees">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=240&q=80" alt="Atlantic Halibut" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Entree</span>
+              <h3>Atlantic Halibut</h3>
+              <p>Pan seared over seafood risotto with rich lobster cream sauce</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$36.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Atlantic Halibut" data-price="36.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Entree 3 -->
+          <div class="menu-row-card" data-category="entrees">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?auto=format&fit=crop&w=240&q=80" alt="Jumbo Lump Stuffed Shrimp" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Entree</span>
+              <h3>Stuffed Shrimp</h3>
+              <p>Jumbo lump crab stuffing, zucchini and squash pasta, lemon herb butter</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$36.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Stuffed Shrimp" data-price="36.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Entree 4 -->
+          <div class="menu-row-card" data-category="entrees">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1501595091296-3aa970afb3ff?auto=format&fit=crop&w=240&q=80" alt="Seared Panko Crusted Bluefin Tuna" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Entree</span>
+              <h3>Seared Panko Crusted Bluefin Tuna</h3>
+              <p>Grilled asparagus, jasmine rice, pineapple soy glaze</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$35.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Seared Panko Crusted Bluefin Tuna" data-price="35.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Entree 5 -->
+          <div class="menu-row-card" data-category="entrees">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=240&q=80" alt="Angus Prime 28-Day Dry Aged NY Strip" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Butcher's Cut</span>
+              <h3>Angus Prime 28-Day Dry Aged NY Strip</h3>
+              <p>Bacon mac and cheese, grilled asparagus, house demi</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$46.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Angus Prime Dry Aged NY Strip" data-price="46.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Entree 6 -->
+          <div class="menu-row-card" data-category="entrees">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=240&q=80" alt="Australian Rack of Lamb" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Entree</span>
+              <h3>Australian Rack of Lamb</h3>
+              <p>Organic purple sweet potato mash, baby carrots, port wine demi</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$44.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Australian Rack of Lamb" data-price="44.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Side 1 -->
+          <div class="menu-row-card" data-category="sides">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1618449840665-9ed506d73a34?auto=format&fit=crop&w=240&q=80" alt="Garlic Mashed Potatoes" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Side</span>
+              <h3>Garlic Mashed Potatoes</h3>
+              <p>Whipped Yukon gold potatoes, roasted garlic butter</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$8.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Garlic Mashed Potatoes" data-price="8.00">+ Add</button>
+            </div>
+          </div>
+
+          <!-- Side 2 -->
+          <div class="menu-row-card" data-category="sides">
+            <img class="menu-dish-thumb" src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=240&q=80" alt="Creamy Parmesan Risotto" loading="lazy">
+            <div class="menu-row-info">
+              <span class="menu-row-tag">Side</span>
+              <h3>Creamy Parmesan Risotto</h3>
+              <p>Arborio rice slow-simmered with aged parmesan and herbs</p>
+            </div>
+            <div class="menu-row-actions">
+              <span class="menu-row-price">$8.00</span>
+              <button class="mini-add-btn add-to-bag" data-name="Creamy Parmesan Risotto" data-price="8.00">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT DUNE 18 & AMBIENCE SECTION -->
+    <section id="about" class="section-block">
+      <div class="container about-grid">
+        <div class="about-photo-collage">
+          <!-- Indoor Chic Dining Room Ambience -->
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Dune 18 Ship Bottom coastal dining interior" loading="lazy">
+          <!-- Outdoor Al Fresco Patio Ambience -->
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Evening al fresco outdoor seating at Dune 18" loading="lazy">
+        </div>
+
+        <div class="about-copy">
+          <span class="section-kicker">About Dune 18</span>
+          <h2>Relaxed coastal luxury on Long Beach Island.</h2>
+          <p>Located at 1916 Long Beach Blvd in Ship Bottom, Dune 18 blends modern seaside comfort with warm, attentive hospitality. Whether you join us in our chic indoor dining room or enjoy the ocean breeze on our al fresco outdoor patio, every evening is crafted to feel effortless and memorable.</p>
+          <p>From fresh Barnegat Bay shellfish and Thai Coconut Seared Scallops to dry-aged steaks and seasonal Prix Fixe menus, our kitchen celebrates the vibrant flavors of the Jersey Shore.</p>
+
+          <div class="byob-pill-card">
+            <div class="byob-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 22h8M12 15v7M12 15a5 5 0 005-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 005 5z"/>
+              </svg>
+            </div>
+            <div>
+              <strong class="byob-title">BYOB & Local Bellview Winery Selections</strong>
+              <span class="byob-desc">Bring your favorite bottle of wine or craft beer—we gladly provide decanters, ice buckets, and stemware—or select a bottle from New Jersey's Bellview Winery right at your table.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUEST REVIEWS SECTION WITH AVATARS & VERIFIED BADGES -->
+    <section class="section-block" aria-label="Guest Reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">4.8 ★ on Resy & Google</span>
+          <h2>Loved by Locals & LBI Visitors</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div>
+              <div class="review-card-top">
+                <div class="star-row">★★★★★</div>
+                <span class="review-source-badge">Resy Verified</span>
+              </div>
+              <p class="review-text">“The food and ambience at Dune 18 are always amazing, but more importantly is the interest by the owners in making your time at Dune an experience, not just an amazing dinner.”</p>
+            </div>
+            <div class="reviewer-profile">
+              <div class="reviewer-avatar-initials">LH</div>
+              <div>
+                <div class="reviewer-name">Louis H.</div>
+                <div class="reviewer-sub">Verified Diner · Ship Bottom, NJ</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="review-card-top">
+                <div class="star-row">★★★★★</div>
+                <span class="review-source-badge">Google Review</span>
+              </div>
+              <p class="review-text">“Best restaurant in LBI! Fabulous Food! Service is 5 star! BYOB restaurant! Even Better! Inside or Outside Dining! What more can I say!”</p>
+            </div>
+            <div class="reviewer-profile">
+              <div class="reviewer-avatar-initials avatar-teal">JH</div>
+              <div>
+                <div class="reviewer-name">Joseph H.</div>
+                <div class="reviewer-sub">Local Guide · Long Beach Island</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="review-card-top">
+                <div class="star-row">★★★★★</div>
+                <span class="review-source-badge">Google Review</span>
+              </div>
+              <p class="review-text">“We loved our meal just now at Dune 18. From the second we walked in the door, the service was hospitable and personable. Our meal was delightful and the atmosphere was very chic.”</p>
+            </div>
+            <div class="reviewer-profile">
+              <div class="reviewer-avatar-initials avatar-dark">ES</div>
+              <div>
+                <div class="reviewer-name">Elissa S.</div>
+                <div class="reviewer-sub">Verified Guest · LBI Visitor</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT US, HOURS & CONTACT SECTION -->
+    <section id="contact" class="section-block">
+      <div class="container visit-grid">
+        <div class="info-card">
+          <span class="section-kicker">Visit Dune 18</span>
+          <h2 class="card-serif-title">Hours & Location</h2>
+          <p class="muted-text">1916 Long Beach Blvd, Ship Bottom, NJ 08008</p>
+
+          <ul class="hours-list">
+            <li><span>Monday – Tuesday</span><span>Closed</span></li>
+            <li><span>Wednesday – Friday</span><span>4:00 PM – 9:00 PM</span></li>
+            <li><span>Saturday</span><span>5:00 PM – 9:00 PM</span></li>
+            <li><span>Sunday</span><span>4:00 PM – 9:00 PM</span></li>
+          </ul>
+
+          <p class="contact-phone-line">
+            <strong>Telephone:</strong> <a href="tel:6094943354" class="phone-highlight">(609) 494-3354</a> · <a href="mailto:info@dune18.com" class="phone-highlight">info@dune18.com</a><br>
+            <span class="small-muted">Dine indoors or Al fresco · Catering & private parties available</span>
+          </p>
+
+          <div class="visit-btn-group">
+            <button class="btn-pill btn-red open-reserve-modal">Book a Table</button>
+            <a href="https://maps.google.com/?q=1916+Long+Beach+Blvd+Ship+Bottom+NJ+08008" target="_blank" rel="noopener noreferrer" class="btn-pill btn-white">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="section-kicker">Inquiries & Private Events</span>
+          <h2 class="card-serif-title mb-md">Send Us a Message</h2>
+          <form id="contact-form">
+            <div class="form-field">
+              <label for="c-name">Full Name *</label>
+              <input type="text" id="c-name" required placeholder="Your name">
+            </div>
+            <div class="form-field">
+              <label for="c-email">Email Address *</label>
+              <input type="email" id="c-email" required placeholder="you@example.com">
+            </div>
+            <div class="form-field">
+              <label for="c-msg">Message *</label>
+              <textarea id="c-msg" rows="3" required placeholder="Questions about dietary accommodations, private parties, or BYOB..."></textarea>
+            </div>
+            <button type="submit" class="btn-pill btn-red w-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <span class="footer-logo">Dune <span>18</span></span>
+          <p>Upscale-casual coastal American & seafood dining in Ship Bottom, Long Beach Island. Proudly BYOB with local Bellview Winery selections.</p>
+        </div>
+        <div>
+          <h4>Location & Contact</h4>
+          <p>1916 Long Beach Blvd<br>Ship Bottom, NJ 08008</p>
+          <p><a href="tel:6094943354">(609) 494-3354</a><br><a href="mailto:info@dune18.com">info@dune18.com</a></p>
+        </div>
+        <div>
+          <h4>Dining Hours</h4>
+          <p>Wed–Fri: 4:00 PM – 9:00 PM<br>Sat: 5:00 PM – 9:00 PM<br>Sun: 4:00 PM – 9:00 PM<br>Mon–Tue: Closed</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Dune 18 Restaurant · Ship Bottom, NJ. All rights reserved.</span>
+        <span>Credit card required to hold table reservations.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TABLE RESERVATION MODAL -->
+  <div class="modal-backdrop" id="reserve-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close-x" id="close-reserve-modal" aria-label="Close modal">×</button>
+      <span class="section-kicker">Resy & Direct Booking</span>
+      <h3 class="modal-serif-title">Reserve Your Table</h3>
+      
+      <div class="cc-alert">
+        <strong>Reservation Policy:</strong> A credit card is required at the time of booking to hold the reservation for all party sizes. Late cancellations with less than 24-hour notice incur a $20/person fee.
+      </div>
+
+      <form id="reservation-form">
+        <div class="form-field">
+          <label for="r-name">Full Name *</label>
+          <input type="text" id="r-name" required placeholder="Jane Doe">
+        </div>
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="r-email">Email *</label>
+            <input type="email" id="r-email" required placeholder="jane@example.com">
+          </div>
+          <div class="form-field">
+            <label for="r-phone">Phone *</label>
+            <input type="tel" id="r-phone" required placeholder="(609) 555-0199">
+          </div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="r-date">Date *</label>
+            <input type="date" id="r-date" required>
+          </div>
+          <div class="form-field">
+            <label for="r-time">Seating Time *</label>
+            <select id="r-time" required>
+              <option value="">Select time</option>
+              <option>4:30 PM</option>
+              <option>5:00 PM</option>
+              <option>5:30 PM</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="r-guests">Party Size & Seating Preference *</label>
+          <select id="r-guests" required>
+            <option value="2">2 Guests — Indoor Dining Room</option>
+            <option value="2-patio">2 Guests — Al Fresco Outdoor Patio</option>
+            <option value="4">4 Guests — Indoor Dining Room</option>
+            <option value="4-patio">4 Guests — Al Fresco Outdoor Patio</option>
+            <option value="6">6 Guests — Large Table</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-pill btn-red w-full mt-sm">Confirm Table Hold</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TAKEOUT PICKUP BAG DRAWER -->
+  <aside class="bag-drawer" id="bag-drawer" aria-label="Pickup Order Bag">
+    <div class="bag-header">
+      <h3 class="bag-title">Pickup Order</h3>
+      <button class="close-x static-close" id="close-bag-btn" aria-label="Close bag">×</button>
+    </div>
+    <p class="bag-subtitle">Curbside & Counter Pickup at 1916 Long Beach Blvd</p>
+
+    <div class="bag-items-list" id="bag-items-list">
+      <p class="bag-empty-msg">Your pickup order is currently empty.</p>
+    </div>
+
+    <div>
+      <div class="bag-subtotal-row">
+        <span>Estimated Subtotal</span>
+        <span id="bag-total">$0.00</span>
+      </div>
+      <button class="btn-pill btn-red w-full" id="checkout-pickup-btn">Submit Pickup Order</button>
+    </div>
+  </aside>
+
+  <!-- Notification Toast -->
+  <div class="toast-banner" id="toast">Added to pickup order</div>
+
+  <!-- Connected External Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
